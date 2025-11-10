@@ -1,129 +1,84 @@
-# Build a Full-Stack To-Do List App with Rust Backend and Next.js Frontend | Rust Project
 
-Build a Full-Stack To-Do List App with Rust Backend and Next.js Frontend | Rust Project
+# Full-Stack To-Do App (Rust + Next.js)
 
-In this comprehensive tutorial, we'll guide you through building a full-stack to-do list application from scratch using Rust for the backend and Next.js for the frontend. Whether you're new to these technologies or looking to enhance your skills, this video covers everything you need to know to create a robust and efficient to-do list app.
+> Welcome! This is my personal project: a full-stack To-Do List application built with a Rust backend and a Next.js (React) frontend. The goal is to provide a fast, modern, and reliable to-do app while learning and demonstrating full-stack development with Rust and JavaScript/TypeScript.
 
-What You'll Learn:
+---
 
-- Setting up a Rust backend with Actix-web
-- Implementing database operations using Diesel ORM
-- Creating RESTful APIs in Rust
-- Building a modern frontend with Next.js and React
-- Fetching data from the backend using React Query
-- Managing application state and UI with Next.js
+## 🚀 Project Overview
 
-## Project Overview
+This app lets you manage your daily tasks efficiently. The backend is written in Rust (using Actix-web), providing a high-performance REST API. The frontend is built with Next.js and React for a smooth, interactive user experience.
 
-![alt text](https://www.daulathussain.com/wp-content/uploads/2024/06/Build-a-Full-Stack-To-Do-List-App-with-Rust-Backend-and-Next.js-Frontend-Rust-Project.jpg)
+**Main Features:**
+- Add, edit, and delete to-do items
+- Mark tasks as complete/incomplete
+- Persistent storage (database)
+- Responsive, modern UI
 
-## Instruction
+---
 
-Kindly follow the following Instructions to run the project in your system and install the necessary requirements
+## 🛠️ Tech Stack
 
-- [Final Source Code](https://www.theblockchaincoders.com/sourceCode/build-a-full-stack-to-do-list-app-with-rust-backend-and-next.js-frontend)
+- **Backend:** Rust, Actix-web, Diesel ORM
+- **Frontend:** Next.js, React
+- **Database:** (Configure your preferred DB in `rust/Cargo.toml` and backend code)
+- **API:** RESTful endpoints
 
-#### Setup Video
+---
 
-- [Final Code Setup video](https://youtu.be/hLu-YGQ5Eas)
+## 📁 Project Structure
 
-```https://code.visualstudio.com/download
-  WATCH: Setup & Demo Of Project
+```
+rust/           # Rust backend (API server)
+	src/
+		main.rs     # Rust entry point
+	Cargo.toml    # Rust dependencies
+
+pages/          # Next.js frontend pages
+Components/     # React components (frontend)
+public/         # Static assets
+styles/         # CSS
 ```
 
-#### Install Vs Code Editor
+---
 
-```https://code.visualstudio.com/download
-  GET: VsCode Editor
+## 🏁 Getting Started
+
+### 1. Backend (Rust)
+
 ```
-
-#### INSTALL RUST
-
-```https://nodejs.org/en/download
-  RUST: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cd rust
+# Install dependencies
+cargo build
+# Run the server
+cargo run
 ```
+The backend will start on the configured port (default: 8000). Adjust settings in `rust/src/main.rs` as needed.
 
-#### INSTALL DOC
+### 2. Frontend (Next.js)
 
-```https://doc.rust-lang.org/book/
-  RUST DOC: https://doc.rust-lang.org/book/
 ```
-
-#### PROJECT STRUCTURE
-
-```https://doc.rust-lang.org/book/
-  todo_list
-      ├── Cargo.toml
-      └── src
-          └── main.rs
+# In the project root
+npm install
+npm run dev
 ```
+The frontend will start on [http://localhost:3000](http://localhost:3000).
 
-#### BUILD & RUN COMMAND (BACKEND)
+---
 
-```https://doc.rust-lang.org/book/
- COMMAND:  cargo run
-```
+## ⚙️ Configuration
 
-#### FRONTEND COMMAND
+- Update backend API URL in the frontend if needed (see API calls in `pages/` or `Components/`).
+- Set up your database connection in the Rust backend (`rust/Cargo.toml` and code).
 
-```https://doc.rust-lang.org/book/
- COMMAND:  npx run
-```
+---
 
-#### INSTALL EXTENSION
+## 🙋‍♂️ Author
 
-```https://doc.rust-lang.org/book/
- COMMAND:  rust-analyzer
-```
+This project was created by me as a learning and portfolio piece. Ofcourse, with some help from existing projects. Feel free to use, modify, or contribute!
 
-#### PACKAGES
+---
 
-```https://doc.rust-lang.org/book/
-    [package]
-      name = "todo-backend"
-      version = "0.1.0"
-      edition = "2018"
+## 📄 License
 
-      [dependencies]
-      actix-web = "4"
-      actix-cors = "0.6"
-      serde = { version = "1.0", features = ["derive"] }
-      uuid = { version = "1.0", features = ["serde", "v4"] }
-      chrono = { version = "0.4", features = ["serde"] }
-```
-
-#### Clone Starter File
-
-```https://github.com/daulathussain/Airdrop-Crypto-Starter-File
-  GET: Project Starter File Download
-```
-
-All you need to follow the complete project and follow the instructions which are explained in the tutorial by Daulat
-
-## Final Code Instruction
-
-If you download the final source code then you can follow the following instructions to run the Dapp successfully
-
-#### Setup Video
-
-```https://code.visualstudio.com/download
-  WATCH: Setup & Demo Of Project
-```
-
-#### Final Source Code
-
-```https://www.theblockchaincoders.com/SourceCode
-  Download the Final Source Code
-```
-
-## Important Links
-
-- [Get Pro Blockchain Developer Course](https://www.theblockchaincoders.com/pro-nft-marketplace)
-- [Support Creator](https://bit.ly/Support-Creator)
-- [All Projects Source Code](https://www.theblockchaincoders.com/SourceCode)
-
-## Authors
-
-- [@theblockchaincoders.com](https://www.theblockchaincoders.com/)
-- [@consultancy](https://www.theblockchaincoders.com/consultancy)
-- [@youtube](https://www.youtube.com/@daulathussain)
+MIT License. See `LICENSE` for details.
